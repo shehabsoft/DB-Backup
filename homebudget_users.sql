@@ -20,34 +20,6 @@
 --
 
 --
--- Table structure for table `users`
---
-
-DROP TABLE IF EXISTS `users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL auto_increment,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(45) character set latin1 NOT NULL default '',
-  `password` varchar(45) character set latin1 NOT NULL default '',
-  `Address` varchar(45) character set latin1 NOT NULL default '',
-  `country_id` int(11) NOT NULL default '0',
-  `mobile_number` int(11) NOT NULL default '0',
-  `gender_id` int(11) NOT NULL default '0',
-  `status_id` int(11) NOT NULL default '0',
-  `currency_id` int(11) NOT NULL default '0',
-  `creation_date` datetime default NULL,
-  PRIMARY KEY  (`id`),
-  UNIQUE KEY `users_Unique` (`name`,`email`,`password`,`mobile_number`),
-  KEY `FK_currency` (`currency_id`),
-  KEY `FK_country` (`country_id`),
-  CONSTRAINT `FK_country` FOREIGN KEY (`country_id`) REFERENCES `country` (`id`),
-  CONSTRAINT `FK_currency` FOREIGN KEY (`currency_id`) REFERENCES `currency` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Dumping data for table `users`
 --
 
@@ -66,4 +38,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-12 10:17:27
+-- Dump completed on 2018-10-13  8:34:31
