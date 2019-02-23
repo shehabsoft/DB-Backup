@@ -20,41 +20,28 @@
 --
 
 --
--- Table structure for table `users`
+-- Table structure for table `property`
 --
 
-DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `property`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (
+CREATE TABLE `property` (
   `id` int(11) NOT NULL auto_increment,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(45) character set latin1 NOT NULL default '',
-  `password` varchar(45) character set latin1 NOT NULL default '',
-  `Address` varchar(45) character set latin1 NOT NULL default '',
-  `country_id` int(11) NOT NULL default '0',
-  `mobile_number` int(11) NOT NULL default '0',
-  `gender_id` int(11) NOT NULL default '0',
-  `status_id` int(11) NOT NULL default '0',
-  `currency_id` int(11) NOT NULL default '0',
-  `creation_date` datetime default NULL,
-  PRIMARY KEY  (`id`),
-  UNIQUE KEY `users_Unique` (`name`,`email`,`password`,`mobile_number`),
-  KEY `FK_currency` (`currency_id`),
-  KEY `FK_country` (`country_id`),
-  CONSTRAINT `FK_country` FOREIGN KEY (`country_id`) REFERENCES `country` (`id`),
-  CONSTRAINT `FK_currency` FOREIGN KEY (`currency_id`) REFERENCES `currency` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
+  `name` varchar(45) NOT NULL default '',
+  `value` varchar(45) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `property`
 --
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (37,'SDSDF','shehabsoft94@gmail.com','ITS@2019','ZXCZXC',1,26555,1,1,1,'2016-10-25 14:58:11'),(38,'shehab','shehab.tarek@gmail.com','ITS@2019','Assiut',1,1015557920,1,2,1,'2017-06-14 13:47:58');
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+LOCK TABLES `property` WRITE;
+/*!40000 ALTER TABLE `property` DISABLE KEYS */;
+INSERT INTO `property` VALUES (1,'startYear_of_ExpernsesHistory','2018'),(2,'endYear_of_ExpernsesHistory','2019');
+/*!40000 ALTER TABLE `property` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -66,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-23 10:43:07
+-- Dump completed on 2019-02-23 10:43:16

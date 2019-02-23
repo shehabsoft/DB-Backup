@@ -20,6 +20,21 @@
 --
 
 --
+-- Table structure for table `location`
+--
+
+DROP TABLE IF EXISTS `location`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `location` (
+  `ID` int(11) NOT NULL auto_increment,
+  `arabic_name` varchar(255) NOT NULL,
+  `english_name` varchar(255) character set latin1 default NULL,
+  PRIMARY KEY  (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `location`
 --
 
@@ -38,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-13  8:34:34
+-- Dump completed on 2019-02-23 10:43:11
