@@ -31,7 +31,7 @@ CREATE TABLE `property` (
   `name` varchar(45) NOT NULL default '',
   `value` varchar(45) NOT NULL default '',
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `property` (
 
 LOCK TABLES `property` WRITE;
 /*!40000 ALTER TABLE `property` DISABLE KEYS */;
-INSERT INTO `property` VALUES (1,'startYear_of_ExpernsesHistory','2018'),(2,'endYear_of_ExpernsesHistory','2019');
+INSERT INTO `property` VALUES (1,'startYear_of_ExpernsesHistory','2019'),(2,'endYear_of_ExpernsesHistory','2019'),(3,'dashboard_chart','2020'),(4,'dashboard_chart_year','2020');
 /*!40000 ALTER TABLE `property` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-19 15:01:23
+-- Dump completed on 2020-01-08 11:46:29
