@@ -1,6 +1,6 @@
--- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
 --
--- Host: localhost    Database: homebudget
+-- Host: 127.0.0.1    Database: homebudget
 -- ------------------------------------------------------
 -- Server version	5.0.90-community-nt
 
@@ -40,7 +40,7 @@ CREATE TABLE `property` (
 
 LOCK TABLES `property` WRITE;
 /*!40000 ALTER TABLE `property` DISABLE KEYS */;
-INSERT INTO `property` VALUES (1,'startYear_of_ExpernsesHistory','2019'),(2,'endYear_of_ExpernsesHistory','2019'),(3,'dashboard_chart','2020'),(4,'dashboard_chart_year','2020');
+INSERT INTO `property` VALUES (1,'startYear_of_ExpernsesHistory','2021'),(2,'endYear_of_ExpernsesHistory','2021'),(3,'dashboard_chart','2021'),(4,'dashboard_chart_year','2021');
 /*!40000 ALTER TABLE `property` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-08 11:46:29
+-- Dump completed on 2021-02-20  6:49:58
